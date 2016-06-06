@@ -38,7 +38,7 @@ import javax.annotation.PostConstruct;
 // only load this when running the application (not for unit tests which have the 'testing' profile active)
 public class DatabasePreload {
 
-    final static Logger log = LoggerFactory.getLogger(DatabasePreload.class);
+    static final Logger log = LoggerFactory.getLogger(DatabasePreload.class);
 
     @Autowired
     ApplicationConfig applicationConfig;

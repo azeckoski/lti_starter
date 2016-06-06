@@ -31,7 +31,7 @@ import java.io.IOException;
 @Component
 public class MyOAuthProcessingFilterEntryPointImpl extends OAuthProcessingFilterEntryPoint {
 
-    final static Logger log = LoggerFactory.getLogger(MyOAuthProcessingFilterEntryPointImpl.class);
+    static final Logger log = LoggerFactory.getLogger(MyOAuthProcessingFilterEntryPointImpl.class);
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {

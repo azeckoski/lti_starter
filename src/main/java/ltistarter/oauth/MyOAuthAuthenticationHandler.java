@@ -36,7 +36,7 @@ import java.util.HashSet;
 @Component
 public class MyOAuthAuthenticationHandler implements OAuthAuthenticationHandler {
 
-    final static Logger log = LoggerFactory.getLogger(MyOAuthAuthenticationHandler.class);
+    static final Logger log = LoggerFactory.getLogger(MyOAuthAuthenticationHandler.class);
 
     public static SimpleGrantedAuthority userGA = new SimpleGrantedAuthority("ROLE_USER");
     public static SimpleGrantedAuthority adminGA = new SimpleGrantedAuthority("ROLE_ADMIN");

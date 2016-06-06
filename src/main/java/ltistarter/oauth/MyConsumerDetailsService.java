@@ -31,7 +31,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyConsumerDetailsService implements ConsumerDetailsService {
 
-    final static Logger log = LoggerFactory.getLogger(MyConsumerDetailsService.class);
+    static final Logger log = LoggerFactory.getLogger(MyConsumerDetailsService.class);
 
     @Override
     public ConsumerDetails loadConsumerByConsumerKey(String consumerKey) throws OAuthException {
