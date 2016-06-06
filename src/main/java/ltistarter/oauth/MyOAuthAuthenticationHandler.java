@@ -38,8 +38,8 @@ public class MyOAuthAuthenticationHandler implements OAuthAuthenticationHandler 
 
     final static Logger log = LoggerFactory.getLogger(MyOAuthAuthenticationHandler.class);
 
-    public static SimpleGrantedAuthority userGA = new SimpleGrantedAuthority("ROLE_USER");
-    public static SimpleGrantedAuthority adminGA = new SimpleGrantedAuthority("ROLE_ADMIN");
+    public static final SimpleGrantedAuthority userGA = new SimpleGrantedAuthority("ROLE_USER");
+    public static final SimpleGrantedAuthority adminGA = new SimpleGrantedAuthority("ROLE_ADMIN");
 
     @PostConstruct
     public void init() {

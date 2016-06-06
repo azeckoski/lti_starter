@@ -21,9 +21,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "sso_key")
 public class SSOKeyEntity extends BaseEntity {
-    public static String SOURCE_FACEBOOK = "Facebook";
-    public static String SOURCE_GOOGLE = "Google";
-    public static String SOURCE_LINKEDIN = "LinkedIn";
+    public static final String SOURCE_FACEBOOK = "Facebook";
+    public static final String SOURCE_GOOGLE = "Google";
+    public static final String SOURCE_LINKEDIN = "LinkedIn";
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
