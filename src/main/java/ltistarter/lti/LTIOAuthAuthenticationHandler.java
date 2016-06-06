@@ -38,10 +38,10 @@ public class LTIOAuthAuthenticationHandler implements OAuthAuthenticationHandler
 
     final static Logger log = LoggerFactory.getLogger(LTIOAuthAuthenticationHandler.class);
 
-    public static SimpleGrantedAuthority userGA = new SimpleGrantedAuthority("ROLE_USER");
-    public static SimpleGrantedAuthority learnerGA = new SimpleGrantedAuthority("ROLE_LEARNER");
-    public static SimpleGrantedAuthority instructorGA = new SimpleGrantedAuthority("ROLE_INSTRUCTOR");
-    public static SimpleGrantedAuthority adminGA = new SimpleGrantedAuthority("ROLE_ADMIN");
+    public static final SimpleGrantedAuthority userGA = new SimpleGrantedAuthority("ROLE_USER");
+    public static final SimpleGrantedAuthority learnerGA = new SimpleGrantedAuthority("ROLE_LEARNER");
+    public static final SimpleGrantedAuthority instructorGA = new SimpleGrantedAuthority("ROLE_INSTRUCTOR");
+    public static final SimpleGrantedAuthority adminGA = new SimpleGrantedAuthority("ROLE_ADMIN");
 
     @PostConstruct
     public void init() {
