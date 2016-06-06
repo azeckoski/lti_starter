@@ -38,9 +38,9 @@ import javax.annotation.Resource;
 @Component
 public class ApplicationConfig implements ApplicationContextAware {
 
-    final static Logger log = LoggerFactory.getLogger(ApplicationConfig.class);
-    private volatile static ApplicationContext context;
-    private volatile static ApplicationConfig config;
+    static final Logger log = LoggerFactory.getLogger(ApplicationConfig.class);
+    private static volatile ApplicationContext context;
+    private static volatile ApplicationConfig config;
 
     @Autowired
     ConfigurableEnvironment env;

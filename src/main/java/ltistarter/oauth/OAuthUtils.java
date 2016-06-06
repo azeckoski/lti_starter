@@ -35,7 +35,7 @@ import java.util.Map;
  */
 public class OAuthUtils {
 
-    final static Logger log = LoggerFactory.getLogger(OAuthUtils.class);
+    static final Logger log = LoggerFactory.getLogger(OAuthUtils.class);
 
     public static ResponseEntity sendOAuth1Request(String url, String consumerKey, String sharedSecret, Map<String, String> params, Map<String, String> headers) {
         assert url != null;

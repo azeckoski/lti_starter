@@ -58,7 +58,7 @@ import java.util.*;
  */
 public class LTIRequest {
 
-    final static Logger log = LoggerFactory.getLogger(LTIRequest.class);
+    static final Logger log = LoggerFactory.getLogger(LTIRequest.class);
 
     static final String LIS_PERSON_PREFIX = "lis_person_name_";
 

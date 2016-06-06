@@ -36,7 +36,7 @@ import java.util.HashSet;
 @Component
 public class LTIOAuthAuthenticationHandler implements OAuthAuthenticationHandler {
 
-    final static Logger log = LoggerFactory.getLogger(LTIOAuthAuthenticationHandler.class);
+    static final Logger log = LoggerFactory.getLogger(LTIOAuthAuthenticationHandler.class);
 
     public static SimpleGrantedAuthority userGA = new SimpleGrantedAuthority("ROLE_USER");
     public static SimpleGrantedAuthority learnerGA = new SimpleGrantedAuthority("ROLE_LEARNER");

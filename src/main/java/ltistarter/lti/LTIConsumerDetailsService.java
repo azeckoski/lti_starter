@@ -36,7 +36,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LTIConsumerDetailsService implements ConsumerDetailsService {
 
-    final static Logger log = LoggerFactory.getLogger(LTIConsumerDetailsService.class);
+    static final Logger log = LoggerFactory.getLogger(LTIConsumerDetailsService.class);
 
     @Autowired
     @SuppressWarnings("SpringJavaAutowiringInspection")

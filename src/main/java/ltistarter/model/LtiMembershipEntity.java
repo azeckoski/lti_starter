@@ -20,8 +20,8 @@ import javax.persistence.*;
 @Table(name = "lti_membership")
 public class LtiMembershipEntity extends BaseEntity {
 
-    public final static int ROLE_STUDENT = 0;
-    public final static int ROLE_INTRUCTOR = 1;
+    public static final int ROLE_STUDENT = 0;
+    public static final int ROLE_INTRUCTOR = 1;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -32,7 +32,7 @@ import java.util.List;
 @Component
 public class LTIDataService {
 
-    final static Logger log = LoggerFactory.getLogger(LTIDataService.class);
+    static final Logger log = LoggerFactory.getLogger(LTIDataService.class);
 
     @Autowired
     AllRepositories repos;
